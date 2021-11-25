@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9024428802907857854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4921323799083231646}
+  - component: {fileID: 1014573650}
+  - component: {fileID: 1014573653}
+  - component: {fileID: 1014573654}
+  m_Layer: 0
+  m_Name: cake_cream
+  m_TagString: Sweets
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4921323799083231646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024428802907857854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0006234348, y: -0.0028706715, z: -0.00035694242}
+  m_LocalScale: {x: 3.4305363, y: 3.4305363, z: 3.4305363}
+  m_Children:
+  - {fileID: 8893491056496736791}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1014573650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024428802907857854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: -0.0069882167, y: 0.0062179817, z: 0.0048143817}
+--- !u!114 &1014573653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024428802907857854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e845a595687b439ca80c72803fed6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: {x: 0, y: 20, z: 0}
+--- !u!114 &1014573654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024428802907857854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf82af4fe9fcb4669b33d9e018aaceb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveVector: {x: 0, y: 0.2, z: 0}
+  period: 5
+  movmentFactor: 0
+  isEnabled: 1
+--- !u!1001 &8893491056497123479
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4921323799083231646}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_Name
+      value: cake_cream
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_TagString
+      value: Sweets
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbd88df6480a74243aea643bae1f74e0, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+--- !u!1 &8893491056497026615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+  m_PrefabInstance: {fileID: 8893491056497123479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8893491056496736791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 21d9c0b45109b4c8aaffd9369f1269df, type: 3}
+  m_PrefabInstance: {fileID: 8893491056497123479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1014573651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893491056497026615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06453229, y: 0.08311349, z: 0.06550946}
+  m_Center: {x: 0.00062346464, y: 0.0024240355, z: -0.0003569443}

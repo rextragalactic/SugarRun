@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8587279450653257224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5125976497674400706, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_Name
+      value: Street Peace Nr 20 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.34216645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.873
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.363
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125976497674400734, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 59b59e1c2cfe54b1681aef9f0f5feaff, type: 3}
