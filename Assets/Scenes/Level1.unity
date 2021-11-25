@@ -3808,11 +3808,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1984099470}
-  - component: {fileID: 1984099468}
-  - component: {fileID: 1984099471}
   - component: {fileID: 1984099472}
   - component: {fileID: 1984099474}
   - component: {fileID: 1984099473}
+  - component: {fileID: 1984099468}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3829,10 +3828,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1984099467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d58acc892faa34a68bd8e06b567ba566, type: 3}
+  m_Script: {fileID: 11500000, guid: d9cd5c151f0d04bc1957a6e54ebde69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentLevel: 3
+  jump: 600
+  force: 3
+  movementSpeed: 1
+  rotationtSpeed: 1
+  canJump: 0
+  playerAnimator:
+  - {fileID: 26238430721839031}
+  - {fileID: 1684645857}
+  - {fileID: 1667387018}
+  - {fileID: 1188984079}
+  - {fileID: 1161155736}
+  - {fileID: 816856143}
+  - {fileID: 1778046565}
 --- !u!4 &1984099470
 Transform:
   m_ObjectHideFlags: 0
@@ -3854,23 +3865,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1984099471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984099467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9cd5c151f0d04bc1957a6e54ebde69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump: 600
-  force: 3
-  speed: 1
-  canJump: 0
-  playerAnimator: []
 --- !u!114 &1984099472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,7 +3906,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &1996496570
 GameObject:

@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     public float force = 3f;
 
     [SerializeField]
-    private float speed;
+    private float movementSpeed;
+    [SerializeField]
+    private float rotationtSpeed;
 
 
     private bool isJumping = false;
@@ -43,16 +45,14 @@ public class Player : MonoBehaviour
         animator = playerAnimator[playerIndex];
 
         highscoreManager = FindObjectOfType<HighscoreManager>();
-        sceneManager = GetComponent<ScenenControll>();
+        sceneManager = FindObjectOfType<ScenenControll>();
         gameController = GetComponent<GameController>();
         
     }
 
-
+    
     private void Start()
     {
-       
-
         characterList = new GameObject[transform.childCount];  // definding the size of the Array
 
         // Fill the array with Characters
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
 
     }
 
-
+    
     // Update is called once per frame
     private void FixedUpdate()
     {
@@ -79,10 +79,10 @@ public class Player : MonoBehaviour
             return;
         }
         else
-            animator.SetTrigger("gameStarted");
+            animator.SetTrigger("isMoving");
 
 
-        playerRigidbody.transform.position = transform.position + transform.forward * speed * Time.deltaTime;
+        playerRigidbody.transform.position = transform.position - transform.forward * movementSpeed * Time.deltaTime;
        
 
 
@@ -107,7 +107,8 @@ public class Player : MonoBehaviour
         {
             playerRigidbody.AddForce(Vector3.up * force, ForceMode.Impulse);
             isOnStreet = false;
-           
+            animator.SetTrigger("isJumping");
+
         }
 
 
@@ -124,14 +125,18 @@ public class Player : MonoBehaviour
 
         if (!canJump)
         {
+            Quaternion targetRotation;
+
             if (walkingRight)
             {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                targetRotation = Quaternion.Euler(0, 180, 0);
             }
             else
             {
-                transform.rotation = Quaternion.Euler(0, -90, 0);
+                targetRotation = Quaternion.Euler(0, 90, 0);
             }
+
+            transform.rotation = targetRotation;
         }
     }
 
