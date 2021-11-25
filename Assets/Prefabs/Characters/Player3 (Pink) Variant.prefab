@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &126323685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 126323686}
-  m_Layer: 0
-  m_Name: ray
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &126323686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126323685}
-  m_LocalRotation: {x: -0, y: -0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -0.0013689827, y: 0.12699997, z: 0.016235892}
-  m_LocalScale: {x: 0.47184005, y: 0.47184, z: 0.47184005}
-  m_Children: []
-  m_Father: {fileID: 3819751620083733326}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1448495324653304270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384775911897983619, guid: db177bfc87834524f94a745fe5775967, type: 3}
       propertyPath: m_Name
-      value: Player3 (Pink)
+      value: Player3 (Pink) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db177bfc87834524f94a745fe5775967, type: 3}
@@ -104,41 +74,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2384775911897983619, guid: db177bfc87834524f94a745fe5775967, type: 3}
   m_PrefabInstance: {fileID: 1448495324653304270}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3819751620083733326 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2384775911897983616, guid: db177bfc87834524f94a745fe5775967, type: 3}
-  m_PrefabInstance: {fileID: 1448495324653304270}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &776382110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3819751620083733325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9cd5c151f0d04bc1957a6e54ebde69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RayStart: {fileID: 0}
-  jump: 600
-  force: 3
-  speed: 0
-  canJump: 0
---- !u!114 &776382109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3819751620083733325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d47f32f5aa8564e7a9bb8858aa6791b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameStarted: 0
 --- !u!54 &776382108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -187,3 +122,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &776382109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819751620083733325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47f32f5aa8564e7a9bb8858aa6791b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameStarted: 0
+--- !u!114 &776382110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819751620083733325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9cd5c151f0d04bc1957a6e54ebde69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: 600
+  force: 3
+  speed: 0
+  canJump: 0

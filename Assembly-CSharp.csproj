@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F57C39A9-65D1-5402-6594-04E83044ABCC}</ProjectGuid>
+    <ProjectGuid>{73C93FBE-1BC4-8AF8-B52F-A42A8360A813}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,11 +53,15 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
     <Compile Include="Assets/Script/LoadCharacter.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
+    <Compile Include="Assets/Script/CinemachineVirtualCamera.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
@@ -100,7 +104,6 @@
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Materials/Asset Store/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
-    <Compile Include="Assets/Script/CinemachineVirtualCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Materials/Asset Store/TextMesh Pro/Shaders/TMPro.cginc" />

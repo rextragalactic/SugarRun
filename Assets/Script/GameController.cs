@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Return) && !GameStarted)
+        if(Input.GetKey(KeyCode.Space) && !GameStarted)
         {
             GameStarted = true;
         }

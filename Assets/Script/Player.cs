@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public Transform RayStart;
-
+    
     private Rigidbody playerRigidbody;
     private bool walkingRight = true;
 
@@ -23,20 +22,52 @@ public class Player : MonoBehaviour
     private bool isJumping = false;
     private bool isOnStreet = true;
     public bool canJump;
+    private int playerIndex;
 
     private ScenenControll sceneManager;
     private GameController gameController;
 
-  
+    [SerializeField]
+    Animator[] playerAnimator;
+
+    private GameObject[] characterList;
+
+
 
 
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        //animator = playerAnimator[playerIndex].GetComponent<Animator>();
+        playerIndex = PlayerPrefs.GetInt("CharacterSelected");
+        animator = playerAnimator[playerIndex];
+
         highscoreManager = FindObjectOfType<HighscoreManager>();
         sceneManager = GetComponent<ScenenControll>();
         gameController = GetComponent<GameController>();
+        
+    }
+
+
+    private void Start()
+    {
+       
+
+        characterList = new GameObject[transform.childCount];  // definding the size of the Array
+
+        // Fill the array with Characters
+        for (int i = 0; i < transform.childCount; i++)
+            characterList[i] = transform.GetChild(i).gameObject;
+
+        // Hide them 
+        foreach (GameObject go in characterList)
+            go.SetActive(false);
+
+        if (characterList[0])
+        {
+            characterList[playerIndex].SetActive(true);
+        }
+
     }
 
 
@@ -63,17 +94,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !canJump)
         {
             SwitchDirection();
-
-
-            // Check if Player is on the ground
-
-            RaycastHit hit;
-
-            if (!Physics.Raycast(RayStart.position, -transform.up, out hit, Mathf.Infinity))
-            {
-                animator.SetTrigger("isFalling");
-            }
-
         }
 
         // If the position of the Player is -3 Restart the game because the Playe died 
@@ -153,7 +173,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Jump")
+        if(other.tag == "Jump") // If i am out of the Collider you can't jump
         {
             canJump = false;
         }
