@@ -10,7 +10,6 @@ public class ScenenControll : MonoBehaviour
     {
         Menu,
         ChooseCharacter,
-        SmallMenu,
         Level1,
         Level2,
         Level3,
@@ -21,11 +20,7 @@ public class ScenenControll : MonoBehaviour
         Level8,
         Level9,
         Level10,
-        Level11,
-        Level12,
-        Level13,
-        Level14,
-        Level15
+        YouWin
 
 
     }
@@ -39,7 +34,7 @@ public class ScenenControll : MonoBehaviour
         switch (CurrentLevel)
         {
             case eLevels.Menu:
-                SceneManager.LoadScene("ChooseCharacter");
+                SceneManager.LoadScene("CharacterSelection");
                 break;
             case eLevels.ChooseCharacter:
                 SceneManager.LoadScene("Level1");
@@ -72,23 +67,9 @@ public class ScenenControll : MonoBehaviour
                 SceneManager.LoadScene("Level10");
                 break;
             case eLevels.Level10:
-                SceneManager.LoadScene("Level11");
+                SceneManager.LoadScene("YouWin");
                 break;
-            case eLevels.Level11:
-                SceneManager.LoadScene("Level12");
-                break;
-            case eLevels.Level12:
-                SceneManager.LoadScene("Level13");
-                break;
-            case eLevels.Level13:
-                SceneManager.LoadScene("Level14");
-                break;
-            case eLevels.Level14:
-                SceneManager.LoadScene("Level15");
-                break;
-            case eLevels.Level15:
-                SceneManager.LoadScene("Menu");
-                break;
+            
 
             default:
                 SceneManager.LoadScene("Level1");
@@ -99,6 +80,12 @@ public class ScenenControll : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+
+    }
+
+    public void LevelMenu()
+    {
+        SceneManager.LoadScene("Levels");
 
     }
 
@@ -136,27 +123,15 @@ public class ScenenControll : MonoBehaviour
             case eLevels.Level10:
                 SceneManager.LoadScene("Level10");
                 break;
-            case eLevels.Level11:
-                SceneManager.LoadScene("Level11");
-                break;
-            case eLevels.Level12:
-                SceneManager.LoadScene("Level12");
-                break;
-            case eLevels.Level13:
-                SceneManager.LoadScene("Level13");
-                break;
-            case eLevels.Level14:
-                SceneManager.LoadScene("Level14");
-                break;
-            case eLevels.Level15:
-                SceneManager.LoadScene("Level15");
-                break;
+            
 
 
             default:
                 SceneManager.LoadScene("Level1");
                 break;
         }
+
+
 
        
     }

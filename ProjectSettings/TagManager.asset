@@ -11,6 +11,8 @@ TagManager:
   - END
   - Obstacle
   - Bounc
+  - Fire
+  - Door
   layers:
   - Default
   - TransparentFX

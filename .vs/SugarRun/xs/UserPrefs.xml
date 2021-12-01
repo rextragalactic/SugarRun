@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{73C93FBE-1BC4-8AF8-B52F-A42A8360A813}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/FollowCam.cs">
     <Files>
-      <File FileName="Assets/Script/Player.cs" Line="44" Column="1" />
+      <File FileName="Assets/Script/Player.cs" Line="105" Column="1" />
       <File FileName="Assets/Script/CharacterSelection.cs" Line="10" Column="5" />
       <File FileName="Assets/Script/GameController.cs" Line="13" Column="38" />
+      <File FileName="Assets/Script/ScenenControll.cs" Line="169" Column="1" />
+      <File FileName="Assets/Script/FollowCam.cs" Line="10" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +13,7 @@
           <Node name="SugarRun" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="Player.cs" selected="True" />
+                <Node name="FollowCam.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -171,7 +171,14 @@ public class Player : MonoBehaviour
             sceneManager.Reset();
         }
 
-        
+        // To Collect the Sweets & Candys
+        if (other.tag == "Door" +
+            "")
+        {
+            Destroy(other.gameObject);
+
+        }
+
 
 
     }

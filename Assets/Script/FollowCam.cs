@@ -5,24 +5,34 @@ using UnityEngine;
 public class FollowCam : MonoBehaviour
 {
 
-    // What is my cam following?  
-    public Transform target;
+    // camera will follow this object
+    public Transform Target;
+    //camera transform
+    public Transform camTransform;
+    // offset between camera and target
+    public Vector3 Offset;
+    // change this value to get desired smoothness
+    public float SmoothTime = 0.3f;
 
-    // How long is the distance between my target and the cam? 
-    private Vector3 offset;
+  
+    // This value will change at the runtime depending on target movement. Initialize with zero vector.
+    private Vector3 velocity = Vector3.zero;
 
-
-
-    private void Awake()
+    private void Start()
     {
-        offset = transform.position - target.position; // The position of the targer/player at this moment  - Target position (Zielposition)
+        Offset = camTransform.position - Target.position;
     }
 
-    // Cam movement 
     private void LateUpdate()
     {
-        transform.position = target.position + offset; // Camposition at this moment = target/player position + offset (distance)
+        // update position
+        Vector3 targetPosition = Target.position + Offset;
+        camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
+
+        // update rotation
+        transform.LookAt(Target);
     }
+
 }
 
 
