@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{73C93FBE-1BC4-8AF8-B52F-A42A8360A813}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Music Scripts/SoundManagerCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Highscore Scripts/NewClass.cs">
     <Files>
-      <File FileName="Assets/Script/BackgroundSoundLoop.cs" Line="9" Column="19" />
+      <File FileName="Assets/Script/BackgroundSoundLoop.cs" Line="22" Column="9" />
       <File FileName="Assets/Script/SwitchMusicTrigger.cs" Line="6" Column="2" />
-      <File FileName="Assets/Script/Music Scripts/SwitchMusicOnLoad.cs" Line="16" Column="29" />
-      <File FileName="Assets/Script/Music Scripts/SoundManagerCheck.cs" Line="5" Column="14" />
+      <File FileName="Assets/Script/Music Scripts/SwitchMusicOnLoad.cs" Line="26" Column="1" />
+      <File FileName="Assets/Script/Music Scripts/SoundManagerCheck.cs" Line="12" Column="46" />
+      <File FileName="Assets/Script/Scene Change Scripts/ScenenControll.cs" Line="86" Column="21" />
+      <File FileName="Assets/Script/Highscore Scripts/HighscoreManager.cs" Line="10" Column="5" />
+      <File FileName="Assets/Script/Player Scripts/Player.cs" Line="46" Column="1" />
+      <File FileName="Assets/Script/Highscore Scripts/NewClass.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +17,12 @@
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="Cam Scripts" expanded="True" />
-                <Node name="Highscore Scripts" expanded="True" />
-                <Node name="Music Scripts" expanded="True">
-                  <Node name="SoundManagerCheck.cs" selected="True" />
+                <Node name="Highscore Scripts" expanded="True">
+                  <Node name="NewClass.cs" selected="True" />
                 </Node>
+                <Node name="Music Scripts" expanded="True" />
+                <Node name="Player Scripts" expanded="True" />
+                <Node name="Scene Change Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>

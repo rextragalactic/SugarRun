@@ -83,9 +83,9 @@ public class ScenenControll : MonoBehaviour
 
     }
 
-    public void LevelMenu()
+    public void Home()
     {
-        SceneManager.LoadScene("Levels");
+        SceneManager.LoadScene("Menu");
 
     }
 

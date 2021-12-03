@@ -13,8 +13,8 @@ public class SwitchMusicOnLoad : MonoBehaviour
     {
         theSoundManager = FindObjectOfType<SoundManager>();
 
-        if(NewTrack != null)
-        theSoundManager.ChangeSound(NewTrack);
+        if (NewTrack != null)
+            theSoundManager.ChangeSound(NewTrack);
     }
 
     // Update is called once per frame

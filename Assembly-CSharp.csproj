@@ -54,17 +54,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Characters/Scripts/FirstPersonController.cs" />
+    <Compile Include="Assets/Script/Music Scripts/SwitchMusicTrigger.cs" />
     <Compile Include="Assets/Script/Scene Change Scripts/LoadCharacter.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/DynamicShadowSettings.cs" />
     <Compile Include="Assets/Script/Cam Scripts/CinemachineVirtualCamera.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/SimpleMouseRotator.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/LerpControlledBob.cs" />
+    <Compile Include="Assets/Script/Music Scripts/SoundManager.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/PlatformSpecificContent.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/SmoothFollow.cs" />
     <Compile Include="Assets/Script/Highscore Scripts/HighscoreManager.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/TimedObjectActivator.cs" />
+    <Compile Include="Assets/Script/Music Scripts/SoundManagerCheck.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/WaypointCircuit.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/CameraRefocus.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs" />
@@ -105,15 +108,12 @@
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Scripts/SwitchMoveCorridor2.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs" />
+    <Compile Include="Assets/Script/Music Scripts/SwitchMusicOnLoad.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/FPSCounter.cs" />
     <Compile Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/Utility/SimpleActivatorMenu.cs" />
-    <Compile Include="Assets/Script/Music Scripts/SoundManager.cs" />
-    <Compile Include="Assets/Script/Music Scripts/SwitchMusicTrigger.cs" />
-    <Compile Include="Assets/Script/Music Scripts/SwitchMusicOnLoad.cs" />
-    <Compile Include="Assets/Script/Music Scripts/SoundManagerCheck.cs" />
+    <Compile Include="Assets/Script/Highscore Scripts/Highscore.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/Materials/Asset Store/Pixel Font - Tripfive/_README.txt" />
     <None Include="Assets/Materials/Asset Store/LED&apos;s/Example Scene/Standard Assets/ParticleSystems/Shaders/PriorityParticleAdd.shader" />
   </ItemGroup>
   <ItemGroup>

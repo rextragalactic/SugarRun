@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
 
 
         DontDestroyOnLoad(gameObject); //Dont Destoy the attached Script
+
+        
     }
 
     private void Update()

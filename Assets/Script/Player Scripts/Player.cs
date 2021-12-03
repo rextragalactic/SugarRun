@@ -82,7 +82,6 @@ public class Player : MonoBehaviour
         else
             animator.SetTrigger("isMoving");
 
-
         playerRigidbody.transform.position = transform.position - transform.forward * movementSpeed * Time.deltaTime;
        
 
@@ -147,9 +146,17 @@ public class Player : MonoBehaviour
         // To Collect the Sweets & Candys
         if (other.tag == "Sweets")
         {
-            Destroy(other.gameObject);
+            //Turn off grafic for the Sound
+            other.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            // Soun to collect
+            AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+            audio.Play();
+
+            //Destroy the Object
+            Destroy(other.gameObject, audio.clip.length);
+
+            // Increase the Score
             highscoreManager.IncreaseScore();
-            
 
 
         }
@@ -202,5 +209,5 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    
 }

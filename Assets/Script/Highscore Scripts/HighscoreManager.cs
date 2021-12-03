@@ -7,34 +7,35 @@ using UnityEngine.UI;
 public class HighscoreManager : MonoBehaviour
 {
    
-    public int score;
     
 
     public Text ScoreText;
     public Text HighscoreText;
 
     
-
+    
    
 
     private void Awake()
     {
         HighscoreText.text = "Highscore: " + GetHighscoore().ToString();
-        //ScoreText.text = GetScore().ToString();
+        ScoreText.text = Highscore.Score.ToString();
+        
+
     }
 
-  
+
 
     public void IncreaseScore()
     {
-        score++;
-        ScoreText.text = score.ToString();
-        PlayerPrefs.SetInt("Score", score);
+        Highscore.Score++;
+        ScoreText.text = Highscore.Score.ToString();
+        PlayerPrefs.SetInt("Score", Highscore.Score);
 
-        if (score > GetHighscoore())
+        if (Highscore.Score > GetHighscoore())
         {
-            PlayerPrefs.SetInt("Highscore", score);
-            HighscoreText.text = score.ToString();
+            PlayerPrefs.SetInt("Highscore", Highscore.Score);
+            HighscoreText.text = Highscore.Score.ToString();
            
 
 
