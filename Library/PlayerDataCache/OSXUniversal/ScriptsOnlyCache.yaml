@@ -1466,7 +1466,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 886cde898b0a37237da97236cd075588
+      Hash: f6503ed4c6a420b929ce8d9f61672d80
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HighscoreManager
@@ -2032,4 +2032,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Levels/Level9.unity
   - Assets/Scenes/Levels/Level10.unity
   - Assets/Scenes/Menu's/YouWin.unity
-  playerPath: /Users/rex/Desktop/SugarRun Test 5.app
+  playerPath: /Users/rex/Desktop/Run Build/SugarRun Test .app

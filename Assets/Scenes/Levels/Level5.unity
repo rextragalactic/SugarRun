@@ -26094,7 +26094,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa339bc32ac93430bb1ca7b17202ebcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 0
   ScoreText: {fileID: 703611657}
   HighscoreText: {fileID: 538626905}
 --- !u!4 &1817996862
@@ -26319,7 +26318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3504006206811663124, guid: a115e12ff6cce49b9b24611aedeff1bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.338
+      value: -9.34
       objectReference: {fileID: 0}
     - target: {fileID: 3504006206811663124, guid: a115e12ff6cce49b9b24611aedeff1bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26360,6 +26359,10 @@ PrefabInstance:
     - target: {fileID: 8412928672232594900, guid: a115e12ff6cce49b9b24611aedeff1bb, type: 3}
       propertyPath: m_Name
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412928672232594900, guid: a115e12ff6cce49b9b24611aedeff1bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a115e12ff6cce49b9b24611aedeff1bb, type: 3}
