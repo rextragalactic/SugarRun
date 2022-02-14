@@ -552,7 +552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51375454}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.91654, y: 2.0083, z: 2.1716}
+  m_LocalPosition: {x: -0.91654, y: 2.0083, z: 2.06}
   m_LocalScale: {x: 0.72927, y: 0.72927, z: 0.72927}
   m_Children:
   - {fileID: 1770378719}
@@ -19906,7 +19906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa339bc32ac93430bb1ca7b17202ebcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 0
   ScoreText: {fileID: 559385247}
   HighscoreText: {fileID: 1560339484}
 --- !u!4 &1817996862
